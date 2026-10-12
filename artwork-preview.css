@@ -1,0 +1,43 @@
+table img {
+    cursor: zoom-in;
+}
+
+dialog.artwork-preview {
+    position: fixed;
+    max-width: calc(100vw - 2rem);
+    max-height: 90vh;
+    padding: 3rem 1rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    background: #161616;
+    color: #fff;
+}
+
+dialog.artwork-preview::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.artwork-preview-image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(90vh - 5rem);
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.artwork-preview-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+    font: inherit;
+    cursor: pointer;
+}
