@@ -29,6 +29,22 @@ dialog.artwork-preview::backdrop {
     object-fit: contain;
 }
 
+.artwork-preview-caption {
+    max-width: 60rem;
+    margin: 1rem auto 0;
+    line-height: 1.5;
+}
+
+.artwork-preview-contact {
+    max-width: 60rem;
+    margin: 0.75rem auto 0;
+    line-height: 1.5;
+}
+
+.artwork-preview-contact a {
+    color: inherit;
+}
+
 .artwork-preview-close {
     position: absolute;
     top: 0.5rem;
