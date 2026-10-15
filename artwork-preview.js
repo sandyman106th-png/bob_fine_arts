@@ -28,7 +28,7 @@ function openPreview(image) {
         emailLink.href = `mailto:${image.dataset.contactEmail}`;
         emailLink.textContent = image.dataset.contactEmail;
         previewContact.append(
-            document.createTextNode("If you're interested in this painting, please contact me at "),
+            document.createTextNode(image.dataset.contactMessage || "If you're interested in this painting, please contact me at "),
             emailLink,
             document.createTextNode(".")
         );
